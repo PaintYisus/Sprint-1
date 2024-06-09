@@ -100,6 +100,7 @@
           name="telefono"
           placeholder="Teléfono de la sucursal"
           type="tel"
+          pattern="[0-9]{8}"
         />
       </div>
       <div class="grid grid-cols-2 gap-4">
