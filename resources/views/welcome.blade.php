@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <button id="abrir">AGREGAR SUCURSAL</button>
-  <dialog id="formulario" class="">
+  <button id="abrir" class="bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded">AGREGAR SUCURSAL</button>
+  <dialog id="formulario" class="fixed z-10 inset-0 overflow-y-auto bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all">
   <form action="{{route('sucursal')}}" method="POST">
     @csrf
 <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-full max-w-2xl" data-v0-t="card">
@@ -142,7 +142,7 @@
   </div>
 </div>
 </form>
-<button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 ml-auto"
+<button class="set-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 ml-auto"
 id="cerrar"
 >
   Cancelar
